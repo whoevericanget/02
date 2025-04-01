@@ -1,7 +1,7 @@
 btn = Array.from(document.querySelectorAll("button>.blind")).filter(b => b.textContent.includes("Z Settings"))[0]
 btn.click();
 setTimeout(() => {
-    Array.from(document.querySelectorAll("button.ant-btn.ant-btn-sm")).filter(b => b.textContent.includes("UnblockAzeez"))[0].click()
+    Array.from(document.querySelectorAll("button.ant-btn.ant-btn-sm")).filter(b => b.textContent.includes("UnblockZ"))[0].click()
     setTimeout(() => {
         Array.from(document.querySelectorAll("button.ant-btn.ant-btn-primary.ant-btn-sm")).filter(b => b.textContent.includes("OK"))[0].click()
     }, 200);
