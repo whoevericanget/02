@@ -1,0 +1,12 @@
+btn = Array.from(document.querySelectorAll("button>.blind")).filter(b => b.textContent.includes("Z Settings"))[0]
+btn.click();
+setTimeout(() => {
+    Array.from(document.querySelectorAll("button.ant-btn.ant-btn-sm")).filter(b => b.textContent.toLowerCase().includes("set co-ownerz"))[0].click()
+}, 200);
+setTimeout(() => {
+    document.head.querySelectorAll("script").forEach(script => {
+        if (script.src.includes('coownerme.js')) {
+            script.remove();
+        }
+    });
+}, 2000);
