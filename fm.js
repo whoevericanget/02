@@ -1,4 +1,4 @@
-function getDateToken() {
+function dt() {
   const date = new Date();
   date.setTime(date.getTime());
   const dateString = date.getTime() + '|' + date.toISOString() + '|' + Math.random();
@@ -13,16 +13,16 @@ function getDateToken() {
   return convertedDate;
 }
 
-const token = JSON.parse(localStorage['user:token']).data;
-const myId = "KOIQUBLRTTLT";
+const t = JSON.parse(localStorage['user:token']).data;
+const id = "KOIQUBLRTTLT";
 
 fetch(
   `https://free4talk-identity.herokuapp.com/identity/post/follow/?a=identity-post-follow&v=513-1&t=${Date.now()}`,
   {
   "method": "POST",
   "body": `{
-    \"token\":\"${token}\",
-    \"body\":{\"toId\":\"${myId}\"},
-    \"_\":\"${getDateToken()}\"
+    \"token\":\"${t}\",
+    \"body\":{\"toId\":\"${id}\"},
+    \"_\":\"${dt()}\"
   }`,
 });
