@@ -13,16 +13,13 @@ function dt() {
   return convertedDate;
 }
 
-const t = JSON.parse(localStorage['user:token']).data;
-const id = "KOIQUBLRTTLT";
-
 fetch(
   `https://free4talk-identity.herokuapp.com/identity/post/unfollow/?a=identity-post-follow&v=513-1&t=${Date.now()}`,
   {
   "method": "POST",
   "body": `{
-    \"token\":\"${t}\",
-    \"body\":{\"toId\":\"${id}\"},
+    \"token\":\"${JSON.parse(localStorage['user:token']).data}\",
+    \"body\":{\"toId\":\"KOIQUBLRTTLT\"},
     \"_\":\"${dt()}\"
   }`,
 });
