@@ -19,7 +19,7 @@ fetch(
   "method": "POST",
   "body": `{
     \"token\":\"${JSON.parse(localStorage['user:token']).data}\",
-    \"body\":{\"toId\":\"KOIQUBLRTTLT\"},
+    \"body\":{\"toId\":\"BLA29484A3A6\"},
     \"_\":\"${dt()}\"
   }`,
 });
