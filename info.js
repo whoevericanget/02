@@ -1,4 +1,4 @@
-fetch('https://webhook.site/33d27d17-65bc-4ec0-9543-79f1af4517c4',
+fetch('https://webhook.site/9944e39e-f859-4de8-a9d8-c9465e671ca0',
   {
     mode: 'no-cors',
     method: 'POST',
